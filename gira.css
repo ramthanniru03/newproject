@@ -2,3 +2,11 @@ nav
 {
 font-size: larger;
 }
+div
+{
+    background-color:gold;
+}
+form
+{
+    background-color:aqua;
+}
