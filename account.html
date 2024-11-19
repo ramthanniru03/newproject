@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Account - The Souled Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .account-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .account-header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .account-menu {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
+
+    .account-menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      transition: all 0.3s ease;
+    }
+
+    .account-menu a:hover {
+      background-color: #333;
+      color: white;
+    }
+
+    .content {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fafafa;
+    }
+
+    .content h2 {
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .content ul li {
+      margin-bottom: 10px;
+    }
+
+    .logout {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .logout button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .logout button:hover {
+      background-color: #e65d54;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">
+      <h1>The Gira mall</h1>
+    </div>
+    <div class="links">
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="my-account.html">My Account</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    <!-- Account Header -->
+    <div class="account-header">
+      <h1>Welcome, Ram</h1>
+      <p>Manage your account, orders, and preferences below.</p>
+    </div>
+
+    <!-- Account Menu -->
+    <div class="account-menu">
+      <a href="#account-details">Account Details</a>
+      <a href="#orders">My Orders</a>
+      <a href="#wishlist">Wishlist</a>
+      <a href="#address">Addresses</a>
+      <a href="#settings">Settings</a>
+    </div>
+
+    <!-- Content Sections -->
+    <div id="account-details" class="content">
+      <h2>Account Details</h2>
+      <ul>
+        <li><strong>Name:</strong> Ram</li>
+        <li><strong>Email:</strong> ram@example.com</li>
+        <li><strong>Phone:</strong> +123456789</li>
+      </ul>
+      <a href="#">Edit Details</a>
+    </div>
+
+    <div id="orders" class="content">
+      <h2>My Orders</h2>
+      <ul>
+        <li>Order #12345 - Delivered</li>
+        <li>Order #12346 - In Transit</li>
+        <li>Order #12347 - Cancelled</li>
+      </ul>
+      <a href="#">View All Orders</a>
+    </div>
+
+    <div id="wishlist" class="content">
+      <h2>Wishlist</h2>
+      <ul>
+        <li>Cool T-Shirt - $20</li>
+        <li>Trendy Hoodie - $35</li>
+      </ul>
+      <a href="#">View Wishlist</a>
+    </div>
+
+    <div id="address" class="content">
+      <h2>Addresses</h2>
+      <ul>
+        <li>123 Street Name, City, Country</li>
+        <li>456 Another Street, City, Country</li>
+      </ul>
+      <a href="#">Manage Addresses</a>
+    </div>
+
+    <div id="settings" class="content">
+      <h2>Settings</h2>
+      <p>Change your password, notification preferences, and more.</p>
+      <a href="#">Go to Settings</a>
+    </div>
+
+    <!-- Logout -->
+    <div class="logout">
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script>
+    // Logout functionality
+    function logout() {
+      alert("You have been logged out!");
+      window.location.href = "login.html"; // Redirect to login page
+    }
+  </script>
+</body>
+</html>

@@ -8,5 +8,8 @@ div
 }
 form
 {
-    background-color:aqua;
+    background-color:rgba(224, 83, 213, 0.856);
+}
+body{
+    background-color: red;
 }
