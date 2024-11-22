@@ -3,29 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Sign-Up</title>
+    <title>Fashion Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
-* {
+    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background-image: url(https://img.freepik.com/free-photo/snapshot-full-length-if-girl-shopaholic-bright-outfit-model-carries-supermarket-trolley-with-packages_197531-14250.jpg?t=st=1732206164~exp=1732209764~hmac=c508cc6b94725aa2ff66ac939a8d331de11b534076d6b658a0774d885460fb29&w=740);
-    background-size:calc();
+    background-image: url(https://img.freepik.com/free-photo/two-girls-walking-with-shopping-bags-city-streets-sunny-day_155003-14390.jpg?t=st=1732297633~exp=1732301233~hmac=9c6016e3a7cbf18e65f7a3fd57a33c9ddc83bc8d3ac5385802bf11b19e7379b3&w=740);
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #f7f7f7;
+    color: #1d6e42;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-.signup-container {
+.login-container {
     background-color: #fff;
     padding: 2rem;
     border-radius: 10px;
@@ -38,7 +37,7 @@ body {
 .form-header h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: #ff6f61; /* Fashion-inspired color */
+    color: #302929; /* Fashion-inspired color */
 }
 
 .form-header p {
@@ -46,33 +45,33 @@ body {
     margin: 0.5rem 0 1.5rem;
 }
 
-.signup-form {
+.login-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.signup-form label {
+.login-form label {
     text-align: left;
     font-weight: bold;
     color: #555;
 }
 
-.signup-form input {
+.login-form input {
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 1rem;
 }
 
-.signup-form input:focus {
+.login-form input:focus {
     outline: none;
-    border-color: #ff6f61;
+    border-color: #226847;
     box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
 }
 
-.submit-btn {
-    background-color: #ff6f61;
+.login-btn {
+    background-color: #206344;
     color: #fff;
     padding: 0.75rem;
     border: none;
@@ -82,47 +81,41 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.submit-btn:hover {
-    background-color: #e65a50;
+.login-btn:hover {
+    background-color: #226b53;
 }
 
-.login-link {
+.signup-link {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
 
-.login-link a {
-    color: #ff6f61;
+.signup-link a {
+    color: #154724;
     text-decoration: none;
     font-weight: bold;
 }
 
-.login-link a:hover {
+.signup-link a:hover {
     text-decoration: underline;
 }
 </style>
 <body>
-    <div class="signup-container">
+    <div class="login-container">
         <div class="form-header">
             <h1>Gira mall</h1>
-            <p>Join us and stay trendy!</p>
+            <p>Welcome back! Login to stay stylish.</p>
         </div>
-        <form action="#" class="signup-form">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required>
-            
+        <form action="#" class="login-form">
             <label for="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" required>
             
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
             
-            <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter your password" required>
-            
-            <button type="submit" class="submit-btn">Sign Up</button>
+            <button type="submit" class="login-btn">Log In</button>
         </form>
-        <p class="login-link">Already have an account? <a href="#">Log in</a></p>
+        <p class="signup-link">Gira mall? <a href="#">Sign up</a></p>
     </div>
 </body>
 </html>
